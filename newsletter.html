@@ -29,7 +29,7 @@
   <body
     class="bg-azul-claro font-inter flex justify-center items-center h-screen"
   >
-    <main class="flex px-6">
+    <main class="flex p-6 drop-shadow-2xl">
       <section class="bg-azul-escuro hidden">
         <img
           class=""
@@ -38,7 +38,7 @@
         />
       </section>
 
-      <section class="bg-white p-10 flex flex-col gap-6">
+      <section class="bg-white p-10 flex flex-col gap-6 border rounded-lg">
         <div class="">
           <svg
             class=""
@@ -83,12 +83,15 @@
             >Email</label
           >
           <input
-            class="text-sm font-bold w-full mb-4 pl-3"
+            class="text-sm font-bold w-full mb-4 pl-3 py-2 rounded border shadow"
             id="email"
             type="email"
             placeholder="Digite seu endereço de email"
           />
-          <button class="text-white bg-azul-escuro w-full py-2" type="button">
+          <button
+            class="text-white bg-azul-escuro w-full py-2 rounded-full shadow-2xl"
+            type="button"
+          >
             Inscreva-se
           </button>
         </form>
