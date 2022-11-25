@@ -16,6 +16,19 @@
             fontFamily: {
               vastShadow: ["Vast Shadow", "cursive"],
             },
+            keyframes: {
+              links_kf: {
+                "0%, 100%": {
+                  transform: "rotate(-10deg)",
+                },
+                "50%": {
+                  transform: "rotate(10deg)",
+                },
+              },
+            },
+            animation: {
+              links: "links_kf 0.31s ease-in-out infinite",
+            },
           },
         },
       };
@@ -32,15 +45,23 @@
     >
       <p class="text-4xl font-black font-vastShadow text-primary">Gabriela</p>
       <p class="text-xl">Desenvolvedora Front-end</p>
-      <ul class="flex gap-3 mb-4">
-        <li>
+      <ul class="flex gap-3 mb-4 group">
+        <li class="group-hover:animate-links">
           <a href="#" class="hover:font-bold hover:text-primary">Linkedin</a>
         </li>
-        <li>
-          <a href="#" class="hover:font-bold hover:text-primary">Email</a>
+        <li class="group-hover:animate-links">
+          <a
+            href="#"
+            class="hover:font-bold hover:text-primary group-hover:animate-links"
+            >Email</a
+          >
         </li>
-        <li>
-          <a href="#" class="hover:font-bold hover:text-primary">Github</a>
+        <li class="group-hover:animate-links">
+          <a
+            href="#"
+            class="hover:font-bold hover:text-primary group-hover:animate-links"
+            >Github</a
+          >
         </li>
       </ul>
     </div>
